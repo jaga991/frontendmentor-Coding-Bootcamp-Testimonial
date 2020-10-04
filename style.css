@@ -1,0 +1,95 @@
+* *::before *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+html {
+  --dark-blue: hsl(240, 38%, 20%);
+  --grayish-blue: hsl(240, 18%, 77%);
+  --font-main: 'Inter', sans-serif; /* weight (300, 500 ,700) */
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%;
+}
+/* Global Ends */
+
+body {
+  background: url(/images/pattern-curve.svg) no-repeat left bottom;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 80%;
+  height: 80vh;
+  margin-top: 20px;
+  display: flex
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.text-container, .img-slider-container {
+  width: 100%;
+}
+
+/*testimony*/
+.testimony {
+  background: url(/images/pattern-quotes.svg) no-repeat 20% 15%;
+  background-size: 20% 15%;
+  height: 100%
+}
+
+.testimony .text-container {
+  height: fit-content;
+  position: relative;
+}
+
+.testimony .text-container p{
+  font-family: var(--font-main);
+  color: var(--dark-blue);
+  font-weight: 300;
+  font-size: 2.2vw;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.testimony .text-container span {
+  margin: 0 2px;
+}
+
+.testimony .text-container .name {
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+
+.testimony .text-container .job {
+  font-size: 1.1vw;
+  font-weight: 300;
+  color: var(--grayish-blue);
+}
+
+
+
+
+/*Test borders*/
+section {
+  border: 2px black solid;
+}
+
+.wrapper {
+  border: 5px blue solid;
+}
+
+.text-container, .img-slider-container {
+  border: 2px green dotted;
+}
+
